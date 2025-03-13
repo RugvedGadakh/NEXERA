@@ -10,55 +10,39 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer id="contact" className="bg-sky-600 text-white">
+    <footer id="contact" className="bg-[#1e1e1e] text-white">
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start text-left">
+          
           {/* About Section */}
-          <div className="space-y-4">
-            <h2 className="text-2xl font-bold">TECH STAR</h2>
+          <div className="space-y-4 md:pr-16">
+            <h2 className="text-2xl font-bold">NEXERA TECHNOLOGIES</h2>
             <p className="text-sm">
-              Tech Star is a leading automation company committed to innovation and excellence in delivering cutting-edge automated solutions that optimize processes and drive efficiency.
+              Nexera Technologies is a leading software development company specializing in web development, UI/UX design, dashboards, and graphic design. We harness the latest technologies to create innovative solutions that drive business growth and efficiency.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
-                <Mail className="h-6 w-6" />
+                <Mail className="h-6 w-6 text-blue-400" />
                 <a
-                  href="mailto:infotechstar15@yahoo.in"
-                  aria-label="Send email to Tech Star"
+                  href="mailto:nexeratechnologies25@gmail.com"
+                  aria-label="Send email to Nexera Technologies"
                   className="hover:underline"
                 >
-                  infotechstar15@yahoo.in
+                  nexeratechnologies25@gmail.com
                 </a>
               </div>
-              {/* <div className="flex items-center space-x-2">
-                <Phone className="h-6 w-6" />
-                <span>+91 98765 43210</span>
-              </div> */}
-              <div className="flex items-start space-x-2">
-                <MapPin className="h-6 w-6 flex-shrink-0" />
-                <span>Bhosari, Plot No T/180, MIDC, Bhosari, Pimpri-Chinchwad, Maharashtra 411039</span>
+              <div className="flex items-center space-x-2">
+                <Phone className="h-6 w-6 text-blue-400" />
+                <a
+                 
+                  className="hover:underline"
+                >
+                  +91 8080585104 <br/>
+                  +91 8149427095
+                </a>
               </div>
+             
             </div>
-          </div>
-
-          {/* Map Section */}
-          <div className="space-y-4">
-            <div className="w-full h-64 rounded-lg overflow-hidden shadow-lg">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15125.110589009822!2d73.81973326768274!3d18.606577565919775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9041a56f8db%3A0x9a103a8d59c14c5b!2sTech%20Star!5e0!3m2!1sen!2sin!4v1733466181213!5m2!1sen!2sin"
-                height="100%"
-                width="100%"
-                style={{ border: 0 }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Tech Star Location"
-              ></iframe>
-            </div>
-            {/* <div className="flex items-center text-sm">
-              <MapPin className="h-5 w-5 mr-2 flex-shrink-0" />
-              <p>Bhosari, Plot No T/180, MIDC, Bhosari, Pimpri-Chinchwad, Maharashtra 411039</p>
-            </div> */}
           </div>
 
           {/* Links Section */}
@@ -125,12 +109,10 @@ const Footer = () => {
         </div>
 
         {/* Divider and Footer Text */}
-        <div className="mt-8 pt-4 border-t border-white">
-          <div className="text-center">
-            <p className="text-sm">
-              © {currentYear} Tech Star. All rights reserved. Made with ❤️ by Tech Star Team.
-            </p>
-          </div>
+        <div className="mt-8 pt-4 border-t border-gray-700 text-left">
+          <p className="text-sm">
+            © {currentYear} Nexera Technologies. All rights reserved. Made with ❤️ by Nexera Technologies Team.
+          </p>
         </div>
       </div>
     </footer>
