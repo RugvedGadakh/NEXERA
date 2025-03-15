@@ -10,10 +10,15 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer id="contact" className="bg-[#1e1e1e] text-white">
+    <footer id="contact" className="bg-gray-900 text-white">
       <div className="container mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-16 items-start text-left">
           
+          {/* Logo Section */}
+          <div className="flex justify-center p-4 rounded">
+            <img src="/Images/logo.png" alt="Nexera Logo" className="h-44" />
+          </div>
+
           {/* About Section */}
           <div className="space-y-4 md:pr-16">
             <h2 className="text-2xl font-bold">NEXERA TECHNOLOGIES</h2>
@@ -46,7 +51,7 @@ const Footer = () => {
           </div>
 
           {/* Links Section */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:pl-16">
             <h3 className="text-lg font-semibold">IMPORTANT LINKS</h3>
             <ul className="space-y-2">
               <li>
@@ -109,7 +114,7 @@ const Footer = () => {
         </div>
 
         {/* Divider and Footer Text */}
-        <div className="mt-8 pt-4 border-t border-gray-700 text-left">
+        <div className="mt-8 pt-4 border-t border-gray-700 text-center">
           <p className="text-sm">
             © {currentYear} Nexera Technologies. All rights reserved. Made with ❤️ by Nexera Technologies Team.
           </p>
