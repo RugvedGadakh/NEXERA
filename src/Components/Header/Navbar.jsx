@@ -14,7 +14,7 @@ const Navbar = () => {
     { name: 'Home', icon: Home, href: 'Home' },
     { name: 'About Us', icon: Info, href: 'about' },
     { name: 'Our Services', icon: Briefcase, href: 'our-services' },
-    { name: 'Why Us', icon: Award, href: 'our-services' },
+    { name: 'Why Us', icon: Award, href: 'why-us' },
     { name: 'Our Clients', icon: Users, href: 'clients' },
     { name: 'Contact Us', icon: MessageCircle, href: 'contact' }
   ]

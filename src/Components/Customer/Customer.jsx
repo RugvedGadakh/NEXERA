@@ -1,7 +1,7 @@
 const LogoSection = () => {
     const logos = [
       { name: 'Company 1', src: '/Images/CustomersLogo/elevate_logo.png', link: 'https://company1.com' },
-      { name: 'Company 2', src: '/Images/CustomersLogo/TechStar.png', link: 'https://techstarautomation-jl0remw4v-yash-aswales-projects.vercel.app/' },
+      { name: 'Company 2', src: '/Images/CustomersLogo/TechStar.png', link: 'https://www.techstarautomation.in/s' },
       { name: 'Company 3', src: '/Images/CustomersLogo/VCP.png', link: 'https://vcpexportenterprisesllp.com/' },
       { name: 'Company 4', src: '/Images/CustomersLogo/CareLink.png', link: 'https://www.carelinkpharma.in/' },
     ];
