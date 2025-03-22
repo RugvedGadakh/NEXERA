@@ -3,7 +3,8 @@ const LogoSection = () => {
       { name: 'Company 1', src: '/Images/CustomersLogo/elevate_logo.png', link: 'https://getelevate.xyz/' },
       { name: 'Company 2', src: '/Images/CustomersLogo/TechStar.png', link: 'https://www.techstarautomation.in/' },
       { name: 'Company 3', src: '/Images/CustomersLogo/VCP.png', link: 'https://vcpexportenterprisesllp.com/' },
-      { name: 'Company 4', src: '/Images/CustomersLogo/CareLink.png', link: 'https://www.carelinkpharma.in/' },
+      { name: 'Company 4', src: '/Images/CustomersLogo/SaiAnand.png', link: 'https://saianand-rho.vercel.app/' },
+      
     ];
 
     const LogoItem = ({ logo }) => (
