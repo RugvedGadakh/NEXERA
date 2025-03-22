@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { Facebook, Linkedin, Instagram, Lightbulb, Target, Rocket } from "lucide-react";
+import { Facebook, Linkedin, Instagram, Lightbulb, Target, Rocket, MailIcon } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -67,9 +67,10 @@ export default function AboutUs() {
             </Link>
             <div className="flex space-x-6 items-center">
               {[
-                // { icon: Facebook, link "https://www.facebook.com" },
+               
                 { icon: Linkedin, link: "https://www.linkedin.com/in/nexera-solutions-707b28357/" },
-                { icon: Instagram, link: "https://www.instagram.com/nexera_solutions?igsh=aWNyZnFidGM1emM3" }
+                { icon: Instagram, link: "https://www.instagram.com/nexera_solutions?igsh=aWNyZnFidGM1emM3" },
+                { icon: MailIcon, link: "mailto:nexerasolutions25@gmail.com" },
               ].map((item, index) => (
                 <motion.div
                   key={index}
