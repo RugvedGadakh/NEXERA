@@ -117,7 +117,7 @@ const Footer = () => {
         {/* Divider and Footer Text */}
         <div className="mt-8 pt-4 border-t border-gray-700 text-center">
           <p className="text-sm">
-            © {currentYear} Nexera Technologies. All rights reserved. Made with ❤️ by Nexera Technologies Team.
+            © {currentYear} Nexera Solutions. All rights reserved. Made with ❤️ by Nexera Solutions Team.
           </p>
         </div>
       </div>
