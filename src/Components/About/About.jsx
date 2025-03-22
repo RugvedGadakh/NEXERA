@@ -41,7 +41,7 @@ export default function AboutUs() {
               key={index}
               className="flex items-start space-x-5 p-4 bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
-              transition={{ duration: 0.3 }}
+              // transition={{ duration: 0.3 }}
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
