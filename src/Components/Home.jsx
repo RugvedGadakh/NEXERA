@@ -5,6 +5,8 @@ import Services from "./Services/Services";
 import ValuableCustomers from "./Customer/Customer";
 import Footer from './Footer/Footer';
 import WhyUs from './WhyUs/WhyUs';
+import AboutUs from './About/About';
+
 
 
 const Home = () => {
@@ -12,6 +14,7 @@ const Home = () => {
     <div>
         <Navbar/>
         <Hero/>
+        <AboutUs/>
         <Services/>
         <WhyUs/>
         <ValuableCustomers/>

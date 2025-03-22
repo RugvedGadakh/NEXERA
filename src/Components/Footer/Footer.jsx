@@ -21,19 +21,19 @@ const Footer = () => {
 
           {/* About Section */}
           <div className="space-y-4 md:pr-16">
-            <h2 className="text-2xl font-bold">NEXERA TECHNOLOGIES</h2>
+            <h2 className="text-2xl font-bold">NEXERA SOLUTIONS</h2>
             <p className="text-sm">
-              Nexera Technologies is a leading software development company specializing in web development, UI/UX design, dashboards, and graphic design. We harness the latest technologies to create innovative solutions that drive business growth and efficiency.
+              Nexera Solutions is a leading software development company specializing in web development, UI/UX design, dashboards, and graphic design. We harness the latest technologies to create innovative solutions that drive business growth and efficiency.
             </p>
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Mail className="h-6 w-6 text-blue-400" />
                 <a
-                  href="mailto:nexeratechnologies25@gmail.com"
+                  href="mailto:nexerasolutions25@gmail.com"
                   aria-label="Send email to Nexera Technologies"
                   className="hover:underline"
                 >
-                  nexeratechnologies25@gmail.com
+                  nexerasolutions25@gmail.com
                 </a>
               </div>
               <div className="flex items-center space-x-2">
@@ -54,6 +54,17 @@ const Footer = () => {
           <div className="space-y-4 md:pl-16">
             <h3 className="text-lg font-semibold">IMPORTANT LINKS</h3>
             <ul className="space-y-2">
+            <li>
+                <Link
+                  to="Home"
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer hover:underline"
+                  aria-label="Navigate to Our Solutions"
+                >
+                  Home
+                </Link>
+              </li>
               <li>
                 <Link
                   to="about"
@@ -76,17 +87,7 @@ const Footer = () => {
                   Why Us
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="solutions"
-                  smooth={true}
-                  duration={500}
-                  className="cursor-pointer hover:underline"
-                  aria-label="Navigate to Our Solutions"
-                >
-                  Our Solutions
-                </Link>
-              </li>
+              
               <li>
                 <Link
                   to="clients"

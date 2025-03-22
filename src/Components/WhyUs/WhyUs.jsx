@@ -8,26 +8,28 @@ const WhyUs = () => {
         {/* Text Content Section */}
         <div className="space-y-6 text-left">
           <h2 className="text-3xl font-bold text-white mb-4">Why Choose Us?</h2>
-          <div className="space-y-4 text-gray-300 leading-relaxed">
-            
-            {/* Web Development */}
-            <p className="flex items-start">
-              <span className="mr-3 mt-1 text-blue-400 text-xl">🌐</span>
-              We specialize in high-quality web development, ensuring a seamless and optimized digital experience for businesses.
-            </p>
+          <div className="space-y-5 text-gray-300 leading-relaxed">
 
-            {/* UI/UX & Full-Stack Solutions */}
-            <p className="flex items-start">
-              <span className="mr-3 mt-1 text-blue-400 text-xl">🎨</span>
-              Our team builds modern, responsive UI/UX designs and full-stack applications, combining aesthetics with robust functionality.
-            </p>
+  {/* Web Development */}
+  <p className="flex items-start">
+    <span className="mr-3 mt-1 text-blue-400 text-xl">🌐</span>
+    We build fast, scalable, and visually appealing websites that offer seamless user experiences. Our solutions are optimized for performance, responsiveness, and business growth.
+  </p>
 
-            {/* Latest Technologies */}
-            <p className="flex items-start">
-              <span className="mr-3 mt-1 text-blue-400 text-xl">🚀</span>
-              We leverage cutting-edge technologies like React, Next.js, and Java Spring Boot to create scalable and high-performance solutions.
-            </p>
-          </div>
+  {/* UI/UX & Full-Stack Solutions */}
+  <p className="flex items-start">
+    <span className="mr-3 mt-1 text-blue-400 text-xl">🎨</span>
+    Our UI/UX designs focus on intuitive navigation and modern aesthetics. Combined with full-stack development, we deliver secure, high-performing applications tailored to your needs.
+  </p>
+
+  {/* Latest Technologies */}
+  <p className="flex items-start">
+    <span className="mr-3 mt-1 text-blue-400 text-xl">🚀</span>
+    Using the latest technologies like React, Next.js, and Java Spring Boot, we build innovative, scalable solutions that keep your business ahead in the digital landscape.
+  </p>
+
+</div>
+
         </div>
 
         {/* Image Section */}
