@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { Facebook, Twitter, Instagram, Lightbulb, Target, Rocket } from "lucide-react";
+import { Facebook, Linkedin, Instagram, Lightbulb, Target, Rocket } from "lucide-react";
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 
@@ -31,7 +31,6 @@ export default function AboutUs() {
           animate={isInView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 1 }}
         >
-          {/* Animated Description Cards */}
           {[
             { icon: Lightbulb, text: "Founded in 2025, we started as a small team of passionate innovators, aiming to revolutionize the digital world with groundbreaking solutions.", gradient: "from-sky-500 to-indigo-500" },
             { icon: Target, text: "Our mission is simple: To empower businesses through cutting-edge technology and seamless design. We create solutions that drive impact.", gradient: "from-green-400 to-blue-500" },
@@ -41,7 +40,6 @@ export default function AboutUs() {
               key={index}
               className="flex items-start space-x-5 p-4 bg-gray-800 rounded-lg shadow-lg hover:shadow-2xl transition-all duration-300"
               whileHover={{ scale: 1.05 }}
-              // transition={{ duration: 0.3 }}
               initial={{ opacity: 0, x: -50 }}
               animate={isInView ? { opacity: 1, x: 0 } : {}}
               transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -53,7 +51,6 @@ export default function AboutUs() {
             </motion.div>
           ))}
 
-          {/* Buttons and Social Links */}
           <motion.div
             className="flex flex-col space-y-6 sm:space-y-0 sm:flex-row sm:space-x-6"
             initial={{ opacity: 0, y: 30 }}
@@ -69,23 +66,26 @@ export default function AboutUs() {
               Contact us
             </Link>
             <div className="flex space-x-6 items-center">
-              {[Facebook, Twitter, Instagram].map((Icon, index) => (
+              {[
+                // { icon: Facebook, link "https://www.facebook.com" },
+                { icon: Linkedin, link: "https://www.linkedin.com/in/nexera-solutions-707b28357/" },
+                { icon: Instagram, link: "https://www.instagram.com/nexera_solutions?igsh=aWNyZnFidGM1emM3" }
+              ].map((item, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ scale: 1.1 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Link to="" smooth={true} duration={500} className="text-gray-300 hover:text-white cursor-pointer">
-                    <Icon size={40} className="p-2 bg-gray-700 rounded-full transition-transform" />
-                    <span className="sr-only">{Icon.name}</span>
-                  </Link>
+                  <a href={item.link} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white cursor-pointer">
+                    <item.icon size={40} className="p-2 bg-gray-700 rounded-full transition-transform" />
+                    <span className="sr-only">{item.icon.name}</span>
+                  </a>
                 </motion.div>
               ))}
             </div>
           </motion.div>
         </motion.div>
 
-        {/* Image Section */}
         <motion.div
           className="relative h-[450px] w-full overflow-hidden rounded-lg shadow-xl"
           initial={{ opacity: 0, x: 50 }}
