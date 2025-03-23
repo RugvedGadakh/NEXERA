@@ -42,7 +42,7 @@ const Footer = () => {
                  
                   className="hover:underline"
                 >
-                  +91 8080585104 <br/>
+                  +91 8010702947 <br/>
                   +91 8149427095
                 </a>
               </div>
