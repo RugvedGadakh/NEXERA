@@ -68,7 +68,7 @@ export default function AboutUs() {
             <div className="flex space-x-6 items-center">
               {[
                
-                { icon: Linkedin, link: "https://www.linkedin.com/in/nexera-solutions-707b28357/" },
+                { icon: Facebook, link: "https://www.facebook.com/share/1BVm5AsfDB/?mibextid=qi2Omg" },
                 { icon: Instagram, link: "https://www.instagram.com/nexera_solutions?igsh=aWNyZnFidGM1emM3" },
                 { icon: MailIcon, link: "mailto:nexerasolutions25@gmail.com" },
               ].map((item, index) => (
